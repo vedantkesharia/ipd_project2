@@ -1,0 +1,36 @@
+
+<!-- openai.api_key = "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" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<body>
+    <py-script>
+        import nltk
+        import urllib
+        import bs4 as bs
+        
+        source = urllib.request.urlopen('https://en.wikipedia.org/wiki/Taj_Mahal').read()
+        
+        soup = bs.BeautifulSoup(source, 'lxml')
+        
+        text = ""
+        for paragraph in soup.find_all('p'):
+            text += paragraph.text
+        
+        print(text)
+    </py-script>
+</body>
+</html>
