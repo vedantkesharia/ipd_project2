@@ -9,7 +9,7 @@ from langchain.prompts.chat import (
                                 HumanMessagePromptTemplate, 
                                 AIMessagePromptTemplate )
 import os
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 
 # The number of max documents
 n = 2

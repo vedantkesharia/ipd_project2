@@ -7,11 +7,12 @@ import pyaudio
 import base64
 
 # Your OpenAI API key and personality
-key = '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'
+key = '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'
 personality = 'You are a helpful voice assistant.'
 
 # OpenAI setup
 openai.api_key = key
+# os.environ["OPENAI_API_KEY"] = "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"
 messages = [{"role": "system", "content": personality}]
 
 # pyttsx3 setup
