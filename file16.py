@@ -6,11 +6,11 @@ import sounddevice as sd
 import pyttsx3
 import os
 
-# Set your OpenAI API key here
+
 from dotenv import load_dotenv
 load_dotenv()
 # openai.api_key = os.getenv("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")
-openai.api_key = "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"
+openai.api_key = "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"
 # os.environ["OPENAI_API_KEY"] = "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"
 # Global variable to store audio data
 audio = []
